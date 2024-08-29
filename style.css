@@ -100,6 +100,7 @@ form .input-field {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #3d6666;
 }
 
 .amount-input::before,
@@ -320,9 +321,8 @@ button.reset-btn:enabled:hover {
 }
 .by {
   color: rgb(rgba(22, 225, 141, 0.716), green, blue);
-  background-color: rgb(58, 187, 199);
+  background-color: #00494dff;
   border-radius: 35%;
-  
 }
 
 .social-icons img:hover {
