@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator app</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <main>
+      <!-- logo -->
+      <h1 class="split">
+        <img
+          src="./public/logo.png"
+          width="200"
+          id="logo"
+          alt="logo-for-calculator"
+        />
+        Splitter
+      </h1>
+
+      <section class="container">
+        <!-- left section -->
+        <article class="input-container">
+          <form class="amount-input">
+            <label for="bill-amount">Bill</label>
+            <input
+              class="input-field"
+              type="number"
+              name="amount"
+              id="bill-amount"
+              placeholder="0"
+              aria-label="bill-amount"
+              min="0"
+            />
+          </form>
+          <!-- tip percent buttons -->
+          <form class="select-tip">
+            <label>Select Tip %</label>
+            <div class="percent-options">
+              <button type="button" class="btn_5" aria-label="add-5-percentage">
+                5
+              </button>
+              <button
+                type="button"
+                class="btn_10"
+                aria-label="add-10-percentage"
+              >
+                10
+              </button>
+              <button
+                type="button"
+                class="btn_15"
+                aria-label="add-15-percentage"
+              >
+                15
+              </button>
+              <button
+                type="button"
+                class="btn_25"
+                aria-label="add-25-percentage"
+              >
+                25
+              </button>
+              <button
+                type="button"
+                class="btn_50"
+                aria-label="add-50-percentage"
+              >
+                50
+              </button>
+              <input
+                id="custom"
+                class="custom-percentage"
+                type="number"
+                max="100"
+                placeholder="Custom"
+                aria-label="enter-custom-input"
+              />
+            </div>
+          </form>
+
+          <form class="num-people">
+            <label for="people-count">Number of People </label>
+            <input
+              class="input-field"
+              type="number"
+              name="number-people"
+              id="people-count"
+              placeholder="0"
+              aria-label="enter-number-of-people"
+              required
+              aria-required="true"
+              min="0"
+              max="100"
+            />
+          </form>
+        </article>
+
+        <article class="display-container">
+          <div class="display-tip">
+            <div>
+              <p class="display-description">Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <p class="amount show-tip">$0.00</p>
+          </div>
+
+          <div class="display-total">
+            <div>
+              <p class="display-description">Total</p>
+              <p>/ person</p>
+            </div>
+            <p class="amount show-total">$0.00</p>
+          </div>
+          <button class="reset-btn" aria-label="reset" disabled>reset</button>
+        </article>
+      </section>
+    </main>
+    <section class="foot">
+      <h3 class="by"><i>Coded by Abdulvohid</i></h3>
+      <div class="social-icons">
+        <a href="https://github.com/abdulvokhidjon" target="_blank">
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="GitHub"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/abdulvohid_gulomov_off"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram"
+          />
+        </a>
+        <a href="https://t.me/abdulvohid_web" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+            alt="Telegram"
+          />
+        </a>
+      </div>
+    </section>
+
+    <script src="./public/app.js"></script>
+  </body>
+</html>
